@@ -15,11 +15,14 @@ function Rating({ defaultValue = 2, productId = "" }) {
     div.appendChild(btn);
   }
 
-  div.className = rating;
+  div.className = "rating";
   div.setAttribute("data-rating", rating ?? defaultValue);
 
   return div;
 }
 
-// Ajouter l'étoile au document (par exemple, dans le corps de la page)
+document.body.appendChild(Rating({ defaultValue: 2, productId: "1" }));
+document.body.appendChild(Rating({ defaultValue: 2, productId: "1" }));
+document.body.appendChild(Rating({ defaultValue: 2, productId: "1" }));
+document.body.appendChild(Rating({ defaultValue: 2, productId: "1" }));
 document.body.appendChild(Rating({ defaultValue: 2, productId: "1" }));
